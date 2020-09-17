@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "dgSpecHash": "NzU+spktUnk6K++Jugn9Up4GVGfeNaazUTXqQpd3odu2yBYeQW/V3Nw0HQX198Qi9Uu4w8kf7MBeag7xP81vLg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ether\\source\\repos\\test\\test\\test.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ether\\.nuget\\packages\\graphiql\\2.0.0\\graphiql.2.0.0.nupkg.sha512",
+    "C:\\Users\\ether\\.nuget\\packages\\graphql\\3.0.0\\graphql.3.0.0.nupkg.sha512",
+    "C:\\Users\\ether\\.nuget\\packages\\graphql-parser\\5.3.0\\graphql-parser.5.3.0.nupkg.sha512",
+    "C:\\Users\\ether\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\ether\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\3.1.1\\microsoft.extensions.fileproviders.abstractions.3.1.1.nupkg.sha512",
+    "C:\\Users\\ether\\.nuget\\packages\\microsoft.extensions.fileproviders.embedded\\3.1.1\\microsoft.extensions.fileproviders.embedded.3.1.1.nupkg.sha512",
+    "C:\\Users\\ether\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.1\\microsoft.extensions.primitives.3.1.1.nupkg.sha512",
+    "C:\\Users\\ether\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\ether\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",
+    "C:\\Users\\ether\\.nuget\\packages\\system.reactive\\4.4.1\\system.reactive.4.4.1.nupkg.sha512",
+    "C:\\Users\\ether\\.nuget\\packages\\system.reactive.core\\4.4.1\\system.reactive.core.4.4.1.nupkg.sha512",
+    "C:\\Users\\ether\\.nuget\\packages\\system.reactive.linq\\4.4.1\\system.reactive.linq.4.4.1.nupkg.sha512",
+    "C:\\Users\\ether\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+  ],
+  "logs": []
+}
