@@ -29,3 +29,41 @@ C:\Users\ether\source\repos\test\test\obj\Debug\netcoreapp3.1\test.MvcApplicatio
 C:\Users\ether\source\repos\test\test\obj\Debug\netcoreapp3.1\test.dll
 C:\Users\ether\source\repos\test\test\obj\Debug\netcoreapp3.1\test.pdb
 C:\Users\ether\source\repos\test\test\obj\Debug\netcoreapp3.1\test.genruntimeconfig.cache
+C:\My disc\My projects\GraphQLTest\test\test\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\My disc\My projects\GraphQLTest\test\test\bin\Debug\netcoreapp3.1\appsettings.json
+C:\My disc\My projects\GraphQLTest\test\test\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\My disc\My projects\GraphQLTest\test\test\bin\Debug\netcoreapp3.1\test.exe
+C:\My disc\My projects\GraphQLTest\test\test\bin\Debug\netcoreapp3.1\test.deps.json
+C:\My disc\My projects\GraphQLTest\test\test\bin\Debug\netcoreapp3.1\test.runtimeconfig.json
+C:\My disc\My projects\GraphQLTest\test\test\bin\Debug\netcoreapp3.1\test.runtimeconfig.dev.json
+C:\My disc\My projects\GraphQLTest\test\test\bin\Debug\netcoreapp3.1\test.dll
+C:\My disc\My projects\GraphQLTest\test\test\bin\Debug\netcoreapp3.1\test.pdb
+C:\My disc\My projects\GraphQLTest\test\test\bin\Debug\netcoreapp3.1\GraphiQL.dll
+C:\My disc\My projects\GraphQLTest\test\test\bin\Debug\netcoreapp3.1\GraphQL.dll
+C:\My disc\My projects\GraphQLTest\test\test\bin\Debug\netcoreapp3.1\GraphQL-Parser.dll
+C:\My disc\My projects\GraphQLTest\test\test\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\My disc\My projects\GraphQLTest\test\test\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\My disc\My projects\GraphQLTest\test\test\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\My disc\My projects\GraphQLTest\test\test\bin\Debug\netcoreapp3.1\System.Reactive.Core.dll
+C:\My disc\My projects\GraphQLTest\test\test\bin\Debug\netcoreapp3.1\System.Reactive.Linq.dll
+C:\My disc\My projects\GraphQLTest\test\test\bin\Debug\netcoreapp3.1\System.Reactive.dll
+C:\My disc\My projects\GraphQLTest\test\test\bin\Debug\netcoreapp3.1\System.Reactive.xml
+C:\My disc\My projects\GraphQLTest\test\test\obj\Debug\netcoreapp3.1\test.csprojAssemblyReference.cache
+C:\My disc\My projects\GraphQLTest\test\test\obj\Debug\netcoreapp3.1\test.AssemblyInfoInputs.cache
+C:\My disc\My projects\GraphQLTest\test\test\obj\Debug\netcoreapp3.1\test.AssemblyInfo.cs
+C:\My disc\My projects\GraphQLTest\test\test\obj\Debug\netcoreapp3.1\test.RazorTargetAssemblyInfo.cache
+C:\My disc\My projects\GraphQLTest\test\test\obj\Debug\netcoreapp3.1\test.csproj.CopyComplete
+C:\My disc\My projects\GraphQLTest\test\test\obj\Debug\netcoreapp3.1\staticwebassets\test.StaticWebAssets.Manifest.cache
+C:\My disc\My projects\GraphQLTest\test\test\obj\Debug\netcoreapp3.1\staticwebassets\test.StaticWebAssets.xml
+C:\My disc\My projects\GraphQLTest\test\test\obj\Debug\netcoreapp3.1\test.dll
+C:\My disc\My projects\GraphQLTest\test\test\obj\Debug\netcoreapp3.1\test.pdb
+C:\My disc\My projects\GraphQLTest\test\test\obj\Debug\netcoreapp3.1\test.genruntimeconfig.cache
+C:\My disc\My projects\GraphQLTest\test\test\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
+C:\My disc\My projects\GraphQLTest\test\test\bin\Debug\netcoreapp3.1\System.Web.Http.dll
+C:\My disc\My projects\GraphQLTest\test\test\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\My disc\My projects\GraphQLTest\test\test\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\My disc\My projects\GraphQLTest\test\test\bin\Debug\netcoreapp3.1\GraphQL.Server.Core.dll
+C:\My disc\My projects\GraphQLTest\test\test\bin\Debug\netcoreapp3.1\Dawn.Guard.dll
+C:\My disc\My projects\GraphQLTest\test\test\bin\Debug\netcoreapp3.1\GraphQL.Query.Builder.dll
+C:\My disc\My projects\GraphQLTest\test\test\obj\Debug\netcoreapp3.1\test.csproj.CoreCompileInputs.cache
+C:\My disc\My projects\GraphQLTest\test\test\obj\Debug\netcoreapp3.1\test.MvcApplicationPartsAssemblyInfo.cache

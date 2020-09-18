@@ -10,7 +10,8 @@ namespace test
     {
         public WeatherForecastQuery()
         {
-
+            Field<WeatherForecastType>(
+                name: "test", resolve: context => new WeatherForecast { Id = 1, Date = DateTime.Now, Summary = "LOL", TemperatureC = 125 });
         }
-    }
+   }
 }

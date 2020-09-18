@@ -1,39 +1,77 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using GraphQL;
+using GraphQL.Instrumentation;
+//using GraphQL.NewtonsoftJson;
+using GraphQL.Types;
+using GraphQL.Validation.Complexity;
+using System.Net;
+using System.Net.Http;
+using System.Text;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
+using System.Web.Http;
+using System;
 
 namespace test.Controllers
 {
-    [ApiController]
-    [Route("[controller]")]
-    public class WeatherForecastController : ControllerBase
+    [Route("graphql")]
+    public class WeatherForecastController : ApiController
     {
-        private static readonly string[] Summaries = new[]
-        {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };
 
-        private readonly ILogger<WeatherForecastController> _logger;
+        private readonly ISchema _schema;
+        private readonly IDocumentExecuter _executer;
+        private readonly IDocumentWriter _writer;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+        public WeatherForecastController(
+            IDocumentExecuter executer,
+            IDocumentWriter writer,
+            ISchema schema)
         {
-            _logger = logger;
+            _executer = executer;
+            _writer = writer;
+            _schema = schema;
         }
 
+        // This will display an example error
         [HttpGet]
-        public IEnumerable<WeatherForecast> Get()
+        public Task<HttpResponseMessage> GetAsync(HttpRequestMessage request)
         {
-            var rng = new Random();
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-            {
-                Date = DateTime.Now.AddDays(index),
-                TemperatureC = rng.Next(-20, 55),
-                Summary = Summaries[rng.Next(Summaries.Length)]
-            })
-            .ToArray();
+            return PostAsync(request, new GraphQLQuery { Query = "query foo { hero { id name appearsIn } }", Variables = null });
         }
+
+        [HttpPost]
+        public async Task<HttpResponseMessage> PostAsync(HttpRequestMessage request, GraphQLQuery query)
+        {
+           // var inputs = query.Variables.ToInputs();
+            var queryToExecute = query.Query;
+
+            var result = await _executer.ExecuteAsync(_ =>
+            {
+                _.Schema = _schema;
+                _.Query = queryToExecute;
+                _.OperationName = query.OperationName;
+               // _.Inputs = inputs;
+
+                _.ComplexityConfiguration = new ComplexityConfiguration { MaxDepth = 15 };
+                _.FieldMiddleware.Use<InstrumentFieldsMiddleware>();
+
+            }).ConfigureAwait(false);
+
+            var httpResult = result.Errors?.Count > 0
+                ? HttpStatusCode.BadRequest
+                : HttpStatusCode.OK;
+
+            var json = await _writer.WriteToStringAsync(result);
+
+            var response = request.CreateResponse(httpResult);
+            response.Content = new StringContent(json, Encoding.UTF8, "application/json");
+
+            return response;
+        }
+    }
+
+    public class GraphQLQuery
+    {
+        public string OperationName { get; set; }
+        public string Query { get; set; }
+        public Newtonsoft.Json.Linq.JObject Variables { get; set; }
     }
 }

@@ -1,27 +1,34 @@
+using GraphiQl;
+using GraphQL.Server;
+using GraphQL.Types;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using GraphiQl;
-
+using Microsoft.Extensions.Logging;
 
 namespace test
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
-        {
-            Configuration = configuration;
-        }
-
-        public IConfiguration Configuration { get; }
-
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddScoped<IDependencyResolver>(_ => new
-    FuncDependencyResolver(_.GetRequiredService));
+            services.AddSingleton<WeatherForecastType>();
+
+            services.AddSingleton<WeatherForecastQuery>();
+
+            services.AddSingleton<ISchema, WeatherForecastSchema>();
+            
+            //services.AddLogging(builder => builder.AddConsole());
+            
+            services.AddHttpContextAccessor();
+
+            services.AddGraphQL(options =>
+            {
+                options.EnableMetrics = true;
+          
+            }) ;
             services.AddControllers();
         }
 
@@ -33,7 +40,10 @@ namespace test
 
             app.UseGraphiQl("/graphql");
 
-           
+            app.UseWebSockets();
+
+            // app.UseGraphQLPlayground();
+
 
         }
     }

@@ -11,6 +11,7 @@ namespace test
         public WeatherForecastType()
         {
             Name = "Test";
+            Field(_ => _.Id);
             Field(_ => _.Summary);
             Field(_ => _.TemperatureC);
             Field(_ => _.TemperatureF);
